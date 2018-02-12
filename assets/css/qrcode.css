@@ -1,0 +1,13 @@
+.qrcode {
+  display: block;
+}
+
+.qrcode img {
+  height: 20em;
+}
+
+@media print {
+  .qrcode {
+    display: block;
+  }
+}

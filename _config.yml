@@ -1,0 +1,17 @@
+markdown: kramdown
+
+plugins:
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - Rakefile
+  - README.md
+  - INSTALL.md
+  - LICENSE
+  - NOTICE
