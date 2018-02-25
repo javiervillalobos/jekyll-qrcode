@@ -1,5 +1,11 @@
 .qrcode {
   display: block;
+  text-align: center;  
+}
+
+.qrcode span {
+  display: block;
+  font-size: 1.4em;
 }
 
 .qrcode img {
