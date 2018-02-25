@@ -27,7 +27,7 @@ class QrCodeTag < Liquid::Tag
     partner = partners[0]
     html = ""
     for partner in partners do
-      page_url = "http://34.237.175.114:8080/cdc19790505cl5bm2mb2rs//gethtmlinfo?token=#{partner['token']}"
+      page_url = "http://34.237.175.114:8080/cdc19790505cl5bm2mb2rs/gethtmlinfo?token=#{partner['token']}"
       qr = RQRCode::QRCode.new(page_url)
       png = qr.as_png(
             fill: 'white',
