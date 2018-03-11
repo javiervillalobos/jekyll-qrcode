@@ -1,19 +1,44 @@
+body {
+  align-content: center;
+}
+
 .qrcode {
+  display: grid;
+  grid-template-rows: 220px;
+  grid-template-columns: 120px 120px 220px;
+  grid-template-areas: 
+    "member medium big";
+}
+
+.qrcode_member {
+  grid-area: member;
+  text-align: center;
+  border: 1px solid black;
+  padding: 90px 10px 30px 10px;
+}
+
+.qrcode_member span {
   display: block;
-  text-align: center;  
 }
 
-.qrcode span {
-  display: block;
-  font-size: 1.4em;
+.qrcode_medium {
+  grid-area: medium;
+  border: 1px solid black;
+  padding-top: 60px;
+  padding-left: 10px;
 }
 
-.qrcode img {
-  height: 20em;
+.qrcode_medium img {
+  height: 100px;
 }
 
-@media print {
-  .qrcode {
-    display: block;
-  }
+.qrcode_big {
+  grid-area: big;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.qrcode_big img {
+  height: 200px;
 }
